@@ -4,15 +4,17 @@ const prev = document.querySelector(".prev");
 
 let indice = 0;
 
-function mostrarSlide(i){
+function mostrarSlide(i) {
 
-    slides.forEach(slide => slide.classList.remove("ativado"));
+    slides.forEach(slide => {
+        slide.classList.remove("ativado");
+    });
 
-    if(i >= slides.length){
+    if (i >= slides.length) {
         indice = 0;
-    }else if(i < 0){
+    } else if (i < 0) {
         indice = slides.length - 1;
-    }else{
+    } else {
         indice = i;
     }
 

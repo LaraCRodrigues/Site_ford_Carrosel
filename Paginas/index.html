@@ -5,8 +5,9 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Página Home - ford</title>
-  <link rel="stylesheet" href="/Desafio_2_sprint/style.css" />
-  <link rel="stylesheet" href="/Desafio_2_sprint/MediaQueries.css">
+  <link rel="stylesheet" href="/Estilizacao/style.css" />
+  <link rel="stylesheet" href="/Estilizacao/MediaQueries.css" />
+  <link rel="stylesheet" href="/Estilizacao/carrosel.css">
   <link rel="icon" type="image/x-icon" href="/Desafio_2_sprint/Fotos/favicon-1024x1024.avif" />
 </head>
 
@@ -14,7 +15,7 @@
   <header>
     <nav>
       <div class="links_nav">
-        <img class="logo" src="/Desafio_2_sprint/Fotos/Ford_logo.png" alt="foto_logo_ford" />
+        <img class="logo" src="/Fotos/logo-ford-256.png" alt="foto_logo_ford" />
         <ul class="links">
           <li><a class="link a" href="index.html">Home</a></li>
           <li><a class="link a" href="lancamento.html">Lançamento</a></li>
@@ -27,43 +28,58 @@
   <hr />
 
   <main class="conteudo-principal">
-    <section class="sessao_carro">
-
-      <div class="carossel centralizar_btn">
+  <section class="sessao_carro">
+    <div class="carossel">
 
         <button class="btn prev">&#10094;</button>
 
         <div class="slides">
 
-          <div class="slide ativado">
-            <img class="foto_centro" src="/Desafio_2_sprint/Fotos/imagem_1.jpg" alt="Ranger">
-          </div>
+            <div class="slide ativado">
+                <img
+                    class="foto_centro"
+                    src="/Fotos/XL Cabine.jpg"
+                    alt="Ranger XL"
+                >
+            </div>
 
-          <div class="slide">
-            <img class="foto_centro" src="/Desafio_2_sprint/Fotos/imagem_2.jpg" alt="Ford">
-          </div>
+            <div class="slide">
+                <img
+                    class="foto_centro"
+                    src="/Fotos/imagem_1.jpg"
+                    alt="Ranger XLS"
+                >
+            </div>
 
-          <div class="slide">
-            <img class="foto_centro" src="/Desafio_2_sprint/Fotos/imagem_3.jpg" alt="Ford">
-          </div>
+            <div class="slide">
+                <img
+                    class="foto_centro"
+                    src="/Fotos/xls 2.2 diesel.jpg"
+                    alt="Ranger"
+                >
+            </div>
 
         </div>
 
         <button class="btn next">&#10095;</button>
 
-      </div>
+    </div>
 
-      <div class="texto_link centralizar_btn">
-        <h3>Esta é a nova Ranger Ford 2022. Verifique novidades!</h3>
+    <div class="texto_link centralizar_btn">
+
+        <h3>
+            Esta é a nova Ranger Ford 2022. Verifique novidades!
+        </h3>
 
         <div class="cont_btn">
-          <button>
-            <a href="lancamento.html">Conferir aqui!</a>
-          </button>
+            <button>
+                <a href="lancamento.html">Conferir aqui!</a>
+            </button>
         </div>
-      </div>
 
-    </section>
+    </div>
+
+</section>
   </main>
 
   <footer class="footer rodape_home">
@@ -81,10 +97,12 @@
         direitos reservados</a>
 
       <div>
-        <img src="/Desafio_2_sprint/Fotos/ford-96.png" alt="logo ford" />
+        <img src="/Fotos/ford-96.png" alt="logo ford" />
       </div>
     </main>
   </footer>
+
+  <script src="/script.js"></script>
 </body>
 
 </html>
