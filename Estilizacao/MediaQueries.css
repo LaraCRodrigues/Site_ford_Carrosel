@@ -32,8 +32,13 @@
         width: 38px;
         height: 38px;
         font-size: 18px;
-    }
-
+    }   
+    .tras {
+        display: none;
+        }
+        .frente {
+        display: none;
+        }
 
     .texto_link>h3 {
         text-align: center;
@@ -79,10 +84,10 @@
     footer {
         height: auto;
     }
-
+/* 
     .rodape_contato {
         margin-top: 70%;
-    }
+    } */
 
     .copy {
         font-size: 15px;

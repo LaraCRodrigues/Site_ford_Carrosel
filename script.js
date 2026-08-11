@@ -1,6 +1,6 @@
 const slides = document.querySelectorAll(".slide");
-const next = document.querySelector(".next");
-const prev = document.querySelector(".prev");
+const depois = document.querySelector(".frente");
+const antes = document.querySelector(".tras");
 
 let indice = 0;
 
@@ -21,11 +21,11 @@ function mostrarSlide(i) {
     slides[indice].classList.add("ativado");
 }
 
-next.addEventListener("click", () => {
+depois.addEventListener("click", () => {
     mostrarSlide(indice + 1);
 });
 
-prev.addEventListener("click", () => {
+antes.addEventListener("click", () => {
     mostrarSlide(indice - 1);
 });
 

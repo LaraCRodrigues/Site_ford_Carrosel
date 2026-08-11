@@ -5,7 +5,16 @@ html {
     margin: 0;
     padding: 0;
 }
+body {
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
 
+    display: flex;
+    flex-direction: column;
+
+    background-color: #f5f5f5;
+}
 * {
     padding: 0;
     margin: 0;
@@ -16,12 +25,6 @@ html {
     --cor_elementos: #5274C6;
     --cor_paleta_ford: #003478 ;
     --cor_hover: #334b82;
-}
-body {
-    height: 90%;
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh; 
 }
 
 hr {
@@ -106,25 +109,16 @@ a {
     justify-content: center;
     text-align: center;
     width: 100%;
+
+      text-align: center;
+    margin: 25px auto 50px;
 }
 
 .texto_link h3 {
-    margin: 20px 0;
-}
+    font-size: 24px;
+    color: #222;
+    margin-bottom: 20px;}
 
-.cont_btn {
-    display: flex;
-    justify-content: center;
-}
-
-.cont_btn button {
-    
-    cursor: pointer;
-}
-
-.cont_btn a {
-    text-decoration: none;
-}
 .centralizar_btn>button{
     align-items: center;
     background-color: var(--cor_elementos);
@@ -134,9 +128,30 @@ a {
 .centralizar_btn>button>a{
     text-decoration: none;
 }
+.cont_btn button {
+    background-color: #0068b5;
+    border: none;
+    padding: 12px 30px;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+.cont_btn button:hover {
+    background-color: #003478;
+    transform: translateY(-2px);
+}
+
+.cont_btn a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+
 .cont_btn>button a{
     color: #fff;
-    background-color: var(--cor_elementos);
+    /* background-color: var(--cor_elementos); */
     text-decoration: none;
     font-weight: 700;
     padding: 10px;
@@ -178,7 +193,6 @@ footer a {
 }
 
 .rodape_contato {
-    margin-top: 30%;
 }
 
 h2 {
@@ -344,6 +358,8 @@ span {
 }
 
 section {
+   
     margin: 10%;
     min-height: 36vh;
+
 }
