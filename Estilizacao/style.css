@@ -192,8 +192,6 @@ footer a {
     cursor: pointer;
 }
 
-.rodape_contato {
-}
 
 h2 {
     color: #ffff;
@@ -288,52 +286,293 @@ span {
     transition: 0.5s;
 }
 
-/* pg contato */
+/* pg contato *//* =========================
+   FORMULÁRIO DE CONTATO
+========================= */
 
 .container_modal {
-    margin: 0px;
-    align-items: center;
-    justify-content: center;
     display: flex;
-}
-
-.card>.caixas {
-
-    flex-direction: column;
     justify-content: center;
-    gap: 10px;
-
-}
-
-.formulario input {
-    flex-direction: column;
-    display: block;
-
-    border: 1px solid #aaa;
-    padding: 5% 15px 15px 25px;
-    margin: 10px;
-    border-radius: 10px;
-}
-
-.formulario>label {
-    font-weight: 700;
-    padding-left: 56px;
     align-items: center;
 }
 
 .flex_elementos {
     display: flex;
-       
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
 }
-.flex_elementos>.formulario{
-     background-color: #003478;
-        padding: 10px;
-        border-radius: 3px;
-        color: #fff;
-}
-.flex_elementos>img {
-    width: 700px;
+
+
+/* Imagem do carro */
+
+.flex_elementos > img {
+    width: 500px;
     height: auto;
+}
+
+
+/* Formulário */
+
+.formulario {
+    background-color: #003478;
+
+    width: 330px;
+
+    padding: 15px 20px;
+
+    border-radius: 4px;
+
+    color: white;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    box-sizing: border-box;
+}
+
+
+/* Título */
+
+.formulario h3 {
+    color: white;
+
+    text-align: center;
+
+    margin: 0 0 10px 0;
+
+    font-size: 18px;
+}
+
+
+/* Campos */
+
+.formulario input,
+.formulario select,
+.formulario textarea {
+
+    width: 100%;
+
+    padding: 11px 15px;
+
+    margin: 6px 0;
+
+    border: 1px solid #aaa;
+
+    border-radius: 10px;
+
+    box-sizing: border-box;
+
+    font-family: "Roboto", sans-serif;
+
+    outline: none;
+
+    transition: 0.3s;
+}
+
+
+/* Foco nos campos */
+
+.formulario input:focus,
+.formulario select:focus,
+.formulario textarea:focus {
+
+    border-color: #5274C6;
+
+    box-shadow: 0 0 5px rgba(82, 116, 198, 0.6);
+}
+
+
+/* Mensagem */
+
+.formulario textarea {
+
+    height: 80px;
+
+    resize: none;
+}
+
+
+/* Botão */
+
+.btn_contato {
+
+    display: flex;
+
+    justify-content: center;
+
+    margin-top: 10px;
+}
+
+.btn_contato button {
+
+    background-color: #5274C6;
+
+    color: white;
+
+    border: 1px solid #aaa;
+
+    padding: 10px 25px;
+
+    cursor: pointer;
+
+    border-radius: 3px;
+
+    transition: 0.3s;
+}
+
+
+/* PASSO 9 */
+
+.btn_contato button:hover {
+
+    background-color: #0068b5;
+
+    transform: scale(1.08);
+}/* =========================
+   FORMULÁRIO DE CONTATO
+========================= */
+
+.container_modal {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.flex_elementos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+
+
+/* Imagem do carro */
+
+.flex_elementos > img {
+    width: 500px;
+    height: auto;
+}
+
+
+/* Formulário */
+
+.formulario {
+    background-color: #003478;
+
+    width: 330px;
+
+    padding: 15px 20px;
+
+    border-radius: 4px;
+
+    color: white;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    box-sizing: border-box;
+}
+
+
+/* Título */
+
+.formulario h3 {
+    color: white;
+
+    text-align: center;
+
+    margin: 0 0 10px 0;
+
+    font-size: 18px;
+}
+
+
+/* Campos */
+
+.formulario input,
+.formulario select,
+.formulario textarea {
+
+    width: 100%;
+
+    padding: 11px 15px;
+
+    margin: 6px 0;
+
+    border: 1px solid #aaa;
+
+    border-radius: 10px;
+
+    box-sizing: border-box;
+
+    font-family: "Roboto", sans-serif;
+
+    outline: none;
+
+    transition: 0.3s;
+}
+
+
+/* Foco nos campos */
+
+.formulario input:focus,
+.formulario select:focus,
+.formulario textarea:focus {
+
+    border-color: #5274C6;
+
+    box-shadow: 0 0 5px rgba(82, 116, 198, 0.6);
+}
+
+
+/* Mensagem */
+
+.formulario textarea {
+
+    height: 80px;
+
+    resize: none;
+}
+
+
+/* Botão */
+
+.btn_contato {
+
+    display: flex;
+
+    justify-content: center;
+
+    margin-top: 10px;
+}
+
+.btn_contato button {
+
+    background-color: #5274C6;
+
+    color: white;
+
+    border: 1px solid #aaa;
+
+    padding: 10px 25px;
+
+    cursor: pointer;
+
+    border-radius: 3px;
+
+    transition: 0.3s;
+}
+
+
+
+.btn_contato button:hover {
+
+    background-color: #0068b5;
+
+    transform: scale(1.08);
 }
 
 .modal {
@@ -362,4 +601,15 @@ section {
     margin: 10%;
     min-height: 36vh;
 
+}
+
+
+/* modal */
+
+.imagem-comparacao {
+    width: 180px;
+    height: 110px;
+    object-fit: contain;
+    display: block;
+    margin: 0 auto 10px;
 }

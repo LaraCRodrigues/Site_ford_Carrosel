@@ -43,6 +43,17 @@
     .texto_link>h3 {
         text-align: center;
     }
+        .carossel {
+        width: 95%;
+    }
+
+    #carousel {
+        height: 300px;
+    }
+
+    #carousel-title h3 {
+        font-size: 18px;
+    }
 
     .container_cards {
         display: flex;

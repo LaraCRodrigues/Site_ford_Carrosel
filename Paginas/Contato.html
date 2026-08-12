@@ -5,7 +5,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Página Contato - Ford enter</title>
-   <link rel="stylesheet" href="/Estilizacao/style.css" />
+  <link rel="stylesheet" href="/Estilizacao/style.css" />
   <link rel="stylesheet" href="/Estilizacao/MediaQueries.css" />
   <link rel="stylesheet" href="/Estilizacao/carrosel.css">
   <link rel="icon" type="image/x-icon" href="/Desafio_2_sprint/Fotos/favicon-1024x1024.avif">
@@ -28,49 +28,46 @@
     </nav>
   </header>
   <hr>
-<main class="conteudo-principal">
-
+  <main class="conteudo-principal">
     <section class="ssmodal">
 
-        <div class="container_modal">
+      <div class="container_modal">
 
-            <div class="flex_elementos">
+        <div class="flex_elementos">
 
-                <img src="/Fotos/storm.jpg" alt="Ford Ranger" />
+          <img src="/Fotos/storm.jpg" alt="Ford Ranger" />
 
-                <form action="" class="formulario">
+          <form action="" class="formulario">
 
-                    <h3>Sobre Você:</h3>
+            <h3>Sobre Você:</h3>
 
-                    <div class="caixas">
+            <input type="text" id="nome" name="nome" placeholder="NOME" required>
 
-                        <input type="text" placeholder="NOME">
+            <input type="email" id="email" name="email" placeholder="E-MAIL" required>
 
-                        <input type="email" placeholder="E-MAIL">
+            <input type="tel" id="telefone" name="telefone" placeholder="TELEFONE" required>
 
-                        <input type="text" placeholder="CPF*">
+            <select id="tipo-contato" name="tipo-contato" required>
+              <option value="">TIPO DE CONTATO</option>
+              <option value="elogio">Elogio</option>
+              <option value="reclamacao">Reclamação</option>
+              <option value="solicitacao">Solicitação</option>
+            </select>
 
-                        <input type="text" placeholder="SOBRE NOME">
+            <textarea id="mensagem" name="mensagem" placeholder="MENSAGEM" required></textarea>
 
-                        <input type="tel" placeholder="TELEFONE">
+            <span class="btn_contato">
+              <button type="submit">Enviar</button>
+            </span>
 
-                        <input type="text" placeholder="DESCRIÇÃO">
-
-                        <span class="btn_contato">
-                            <button type="submit">Enviar</button>
-                        </span>
-
-                    </div>
-
-                </form>
-
-            </div>
+          </form>
 
         </div>
 
-    </section>
+      </div>
 
-</main>
+    </section>
+  </main>
 
   <!-- colocar target blank nos icones pra pg da ford -->
 
