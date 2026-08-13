@@ -5,9 +5,9 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Página Contato - Ford enter</title>
-  <link rel="stylesheet" href="/Estilizacao/style.css" />
-  <link rel="stylesheet" href="/Estilizacao/MediaQueries.css" />
-  <link rel="stylesheet" href="/Estilizacao/carrosel.css">
+  <link rel="stylesheet" href="/css/style.css" />
+  <link rel="stylesheet" href="/css/MediaQueries.css" />
+  <link rel="stylesheet" href="/css/carrosel.css">
   <link rel="icon" type="image/x-icon" href="/Desafio_2_sprint/Fotos/favicon-1024x1024.avif">
 
 
@@ -37,31 +37,28 @@
 
           <img src="/Fotos/storm.jpg" alt="Ford Ranger" />
 
-          <form action="" class="formulario">
-
+          <form onsubmit="Post(event, this); return false;" class="formulario">
             <h3>Sobre Você:</h3>
 
             <input type="text" id="nome" name="nome" placeholder="NOME" required>
 
-            <input type="email" id="email" name="email" placeholder="E-MAIL" required>
+            <input type="email" name="email" placeholder="Email" required>
 
-            <input type="tel" id="telefone" name="telefone" placeholder="TELEFONE" required>
+            <input type="tel" name="telefone" placeholder="TELEFONE" required>
 
-            <select id="tipo-contato" name="tipo-contato" required>
-              <option value="">TIPO DE CONTATO</option>
+            <select name="contato">
+              <option value="">Selecione uma opção</option>
               <option value="elogio">Elogio</option>
               <option value="reclamacao">Reclamação</option>
               <option value="solicitacao">Solicitação</option>
             </select>
 
-            <textarea id="mensagem" name="mensagem" placeholder="MENSAGEM" required></textarea>
+            <textarea name="mensagem" placeholder="Descreva aqui..." required></textarea>
 
             <span class="btn_contato">
               <button type="submit">Enviar</button>
             </span>
-
           </form>
-
         </div>
 
       </div>
@@ -91,6 +88,7 @@
       </div>
     </main>
   </footer>
+  <script src="/form.js"></script>
 </body>
 
 </html>

@@ -1,47 +1,35 @@
 
 
+.modal-comparacao.ativo {
+    display: flex;
+}
 .modal-comparacao {
     display: none;
 
     position: fixed;
-    z-index: 1000;
-
     top: 0;
     left: 0;
 
     width: 100%;
-    height: 100%;
+    height: 100vh;
 
-    background-color: rgba(0, 0, 0, 0.65);
-
-    align-items: center;
     justify-content: center;
+    align-items: center;
+
+    background-color: rgba(0, 0, 0, 0.5);
 }
-
-
-.modal-comparacao.ativo {
-    display: flex;
-}
-
 
 .modal-conteudo {
-    position: relative;
+    width: 80%;
+    max-width: 900px;
+    max-height: 90vh;
 
-    width: 90%;
-    max-width: 750px;
+    overflow-y: auto;
 
     background-color: white;
-
     padding: 30px;
-
     border-radius: 10px;
-
-    box-shadow: 0 5px 25px rgba(0, 0, 0, 0.4);
-
-    animation: aparecerModal 0.3s ease;
 }
-
-
 @keyframes aparecerModal {
 
     from {
@@ -184,9 +172,10 @@
     gap: 30px;
 }
 
-.flex_elementos > img {
-    width: 500px;
+.flex_carros > img:not(.icon) {
+    width: 600px;
     height: auto;
+    object-fit: contain;
 }
 
 .formulario {

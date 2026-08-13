@@ -128,6 +128,15 @@ a {
 .centralizar_btn>button>a{
     text-decoration: none;
 }
+
+#carousel-titulo {
+    font-size: 24px;
+    font-weight: bold;
+    color: #222;
+    margin-bottom: 20px;
+    text-align: center;
+
+}
 .cont_btn button {
     background-color: #0068b5;
     border: none;

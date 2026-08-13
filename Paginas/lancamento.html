@@ -7,10 +7,10 @@
   <title>Página Lançamento - Ford</title>
   <link rel="stylesheet" href="/Desafio_2_sprint/style.css" />
   <link rel="icon" type="image/x-icon" href="/Desafio_2_sprint/Fotos/favicon-1024x1024.avif" />
-  <link rel="stylesheet" href="/Estilizacao/style.css" />
-  <link rel="stylesheet" href="/Estilizacao/MediaQueries.css" />
-  <link rel="stylesheet" href="/Estilizacao/carrosel.css">
-  <link rel="stylesheet" href="/Estilizacao/modal.css">
+  <link rel="stylesheet" href="/css/style.css" />
+  <link rel="stylesheet" href="/css/MediaQueries.css" />
+  <link rel="stylesheet" href="/css/carrosel.css">
+  <link rel="stylesheet" href="/css/modal.css">
 
 </head>
 
@@ -49,7 +49,8 @@
       <div class="container_cards">
         <div class="card">
           <div class="flex_carros">
-            <input type="checkbox" class="checkbox-carro"> <img src="/Fotos/XL Cabine.jpg" alt="Xl Cabine" />
+            <input type="checkbox" class="checkbox-carro" onchange="SetCarToCompare(this, carroXL)">
+            <img src="/Fotos/XL Cabine.jpg" alt="">
             <img class="icon" src="/Fotos/info.png" alt="icon-informacao" />
           </div>
 
@@ -58,8 +59,10 @@
         </div>
         <div class="card">
           <div class="flex_carros">
-            <input type="checkbox" class="checkbox-carro"> <img src="/Fotos/xls 2.2 diesel.jpg" alt="Xl Cabine" />
-            <img class="icon" src="/Fotos/info.png" alt="icon-informacao" />
+            <input type="checkbox" class="checkbox-carro" onchange="SetCarToCompare(this, carroXLS)">
+            <img src="/Fotos/xls 2.2 diesel.jpg" alt="">
+            <img class="icon"
+              src="/Fotos/info.png" alt="icon-informacao" />
           </div>
 
           <h3>XlS 2.2 Diesel 4X4 AT 2022</h3>
@@ -67,8 +70,8 @@
         </div>
         <div class="card">
           <div class="flex_carros">
-            <input type="checkbox" class="checkbox-carro"> <img src="/Fotos/storm.jpg" alt="Xl Cabine" />
-
+            <input type="checkbox" class="checkbox-carro" onchange="SetCarToCompare(this, carroStorm)">
+            <img src="/Fotos/storm.jpg" alt="">
             <img class="icon" src="/Fotos/info.png" alt="icon-informacao" />
           </div>
           <h3>Storm 3.2 Diesel 4X4 AT 2022</h3>
@@ -76,7 +79,7 @@
         </div>
       </div>
       <div class="container_btn">
-        <button>Comparar Produto</button>
+        <button onclick="ShowCompare()">Comparar Produto</button>
       </div>
 
 
@@ -84,7 +87,7 @@
         <!-- modal -->
         <div class="modal-conteudo">
 
-          <button id="btn-fechar" class="btn-fechar">
+          <button id="btn-fechar" class="btn-fechar" onclick="HideCompare()">
             &times;
           </button>
 
@@ -167,8 +170,7 @@
             </tbody>
 
           </table>
-
-          <button id="btn-fechar-modal" class="btn-fechar-modal">
+          <button id="btn-fechar-modal" class="btn-fechar-modal" onclick="HideCompare()">
             Fechar
           </button>
 
@@ -196,7 +198,7 @@
       </div>
     </main>
   </footer>
-  <script src="/modal.js"></script>
+  <script src="/compare.js"></script>
 </body>
 
 </html>

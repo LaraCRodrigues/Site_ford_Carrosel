@@ -18,7 +18,7 @@
 
     .foto_centro {
         width: 100%;
-        max-width: 350px;
+        max-width: 550px;
         height: auto;
         margin-top: 40px;
     }
@@ -47,9 +47,7 @@
         width: 95%;
     }
 
-    #carousel {
-        height: 300px;
-    }
+    
 
     #carousel-title h3 {
         font-size: 18px;
@@ -69,13 +67,11 @@
         align-items: center;
     }
 
-    .flex_elementos>img {
-        width: 90%;
-        max-width: 350px;
+      .flex_carros > img:not(.icon) {
+        width: 100%;
+        max-width: 280px;
         height: auto;
-        margin-top: 20px;
     }
-
     .flex_elementos {
         padding-top: 30px;
     }
