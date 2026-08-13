@@ -26,7 +26,7 @@ const carroXL = new Car(
     "160",
     "1.210",
     "16",
-    "/Fotos/XL Cabine.jpg"
+    "/Site_ford_Carrosel-main/Fotos/XL Cabine.jpg"
 );
 
 const carroXLS = new Car(
@@ -40,7 +40,7 @@ const carroXLS = new Car(
     "160",
     "1.210",
     "17",
-    "/Fotos/xls 2.2 diesel.jpg"
+    "/Site_ford_Carrosel-main/Fotos/xls 2.2 diesel.jpg"
 );
 
 const carroStorm = new Car(
@@ -54,7 +54,7 @@ const carroStorm = new Car(
     "200",
     "1.210",
     "17",
-    "/Fotos/storm.jpg"
+    "/Site_ford_Carrosel-main/Fotos/storm.jpg"
 );
 function GetCarArrPosition(arr, carClass) {
     for(let i = 0; i < arr.length; i++){

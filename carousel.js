@@ -1,7 +1,7 @@
 let carrosselArr = [
-    "/Fotos/imagem_1.jpg",
-    "/Fotos/imagem_2.jpg",
-    "/Fotos/imagem_3.jpg"
+    "/Site_ford_Carrosel-main/Fotos/imagem_1.jpg",
+    "/Site_ford_Carrosel-main/Fotos/imagem_2.jpg",
+    "/Site_ford_Carrosel-main/Fotos/imagem_3.jpg"
 ];
 
 let titulosArr = [
