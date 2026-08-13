@@ -1,0 +1,620 @@
+@import url('https://fonts.googleapis.com/css2?family=Black+Ops+One&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+html {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+body {
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+
+    display: flex;
+    flex-direction: column;
+
+    background-color: #f5f5f5;
+}
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+}
+:root{
+    --cor_elementos: #5274C6;
+    --cor_paleta_ford: #003478 ;
+    --cor_hover: #334b82;
+}
+
+hr {
+    border: none;
+    box-shadow: 10px 10px 10px #000000;
+}
+
+nav {
+    background-color: #fff;
+    position: fixed;
+    padding: 10px;
+    width: 100%;
+}
+
+header {
+    width: 100%;
+}
+
+nav>div>ul>li>a {
+    color: #4b4949;
+    list-style: none;
+    text-decoration: none;
+
+    font-size: 20px;
+}
+
+.links_nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.links_nav>img {
+    width: 100px;
+    cursor: pointer;
+}
+
+.links {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    text-decoration: none;
+    align-items: center;
+    gap: 10px;
+
+    font-weight: 500;
+}
+
+/* sessao carro */
+
+
+
+.sessao_carro>span>img {
+    width: 90%;
+    max-width: 900%;
+}
+
+.sessao_carro>span {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.sessao_carro>div,
+a {
+    text-align: center;
+    align-items: center;
+    display: inline-block;
+}
+
+.sessao_carro>.texto_link {
+    display: flex;
+    justify-content: center;
+    height: 10vh;
+}
+
+.texto_link {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+
+      text-align: center;
+    margin: 25px auto 50px;
+}
+
+.texto_link h3 {
+    font-size: 24px;
+    color: #222;
+    margin-bottom: 20px;}
+
+.centralizar_btn>button{
+    align-items: center;
+    background-color: var(--cor_elementos);
+    color: #fff;
+    padding: 10px;
+}
+.centralizar_btn>button>a{
+    text-decoration: none;
+}
+
+#carousel-titulo {
+    font-size: 24px;
+    font-weight: bold;
+    color: #222;
+    margin-bottom: 20px;
+    text-align: center;
+
+}
+.cont_btn button {
+    background-color: #0068b5;
+    border: none;
+    padding: 12px 30px;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+.cont_btn button:hover {
+    background-color: #003478;
+    transform: translateY(-2px);
+}
+
+.cont_btn a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+
+.cont_btn>button a{
+    color: #fff;
+    /* background-color: var(--cor_elementos); */
+    text-decoration: none;
+    font-weight: 700;
+    padding: 10px;
+}
+.cont_btn{
+    padding-top: 50px;
+}
+/* footer */
+
+footer {
+    background-color: #003478;
+    flex-shrink: 0;
+
+}
+.icon{
+    width: 30px;
+}
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    flex: 20%;
+
+}
+
+footer h3 {
+    font-weight: 700;
+    color: #fff;
+}
+
+footer a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 20px;
+
+    cursor: pointer;
+}
+
+
+h2 {
+    color: #ffff;
+}
+
+/* pagina lancamento */
+input[type="checkbox"] {
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+}
+.conteudo-principal {
+    flex-grow: 1;
+    width: 100%;
+
+   
+    padding-top: 60px; 
+    padding-bottom: 40px; 
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+    align-items: center;     
+}
+.container_iframe {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+    margin-top: 5%;
+}
+
+.container_iframe>iframe {
+    width: 80vw;
+    height: 80vh;
+    max-width: 700vw;
+}
+
+.container_cards {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin: 10px;
+}
+
+.card>.flex_carros {
+    display: flex;
+    justify-content: center;
+}
+
+.flex_carros {
+    align-items: center;
+}
+
+.flex_carros>.icon {
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+
+}
+
+.flex_carros > img:not(.icon) {
+    width: 350px;
+    height: auto;
+    object-fit: contain;
+}
+
+.card,
+h3,
+span {
+    text-align: left;
+    padding: 5px;
+
+}
+
+/* botao compra da pg lancamento */
+
+.container_btn {
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    margin-top: 10px;
+
+}
+
+.container_btn>button {
+    background-color: #5274C6;
+    margin: 10px;
+    border: 1px solid;
+    padding: 15px;
+    color: #fff;
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+.container_btn>button:hover {
+    background-color: #334b82;
+    transition: 0.5s;
+}
+
+/* pg contato *//* =========================
+   FORMULÁRIO DE CONTATO
+========================= */
+
+.container_modal {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.flex_elementos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+
+
+/* Imagem do carro */
+
+
+/* Formulário */
+
+.formulario {
+    background-color: #003478;
+
+    width: 330px;
+
+    padding: 15px 20px;
+
+    border-radius: 4px;
+
+    color: white;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    box-sizing: border-box;
+}
+
+
+/* Título */
+
+.formulario h3 {
+    color: white;
+
+    text-align: center;
+
+    margin: 0 0 10px 0;
+
+    font-size: 18px;
+}
+
+
+/* Campos */
+
+.formulario input,
+.formulario select,
+.formulario textarea {
+
+    width: 100%;
+
+    padding: 11px 15px;
+
+    margin: 6px 0;
+
+    border: 1px solid #aaa;
+
+    border-radius: 10px;
+
+    box-sizing: border-box;
+
+    font-family: "Roboto", sans-serif;
+
+    outline: none;
+
+    transition: 0.3s;
+}
+
+
+/* Foco nos campos */
+
+.formulario input:focus,
+.formulario select:focus,
+.formulario textarea:focus {
+
+    border-color: #5274C6;
+
+    box-shadow: 0 0 5px rgba(82, 116, 198, 0.6);
+}
+
+
+/* Mensagem */
+
+.formulario textarea {
+
+    height: 80px;
+
+    resize: none;
+}
+
+
+/* Botão */
+
+.btn_contato {
+
+    display: flex;
+
+    justify-content: center;
+
+    margin-top: 10px;
+}
+
+.btn_contato button {
+
+    background-color: #5274C6;
+
+    color: white;
+
+    border: 1px solid #aaa;
+
+    padding: 10px 25px;
+
+    cursor: pointer;
+
+    border-radius: 3px;
+
+    transition: 0.3s;
+}
+
+
+/* PASSO 9 */
+
+.btn_contato button:hover {
+
+    background-color: #0068b5;
+
+    transform: scale(1.08);
+}/* =========================
+   FORMULÁRIO DE CONTATO
+========================= */
+
+.container_modal {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.flex_elementos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+
+
+
+
+
+/* Formulário */
+
+.formulario {
+    background-color: #003478;
+
+    width: 330px;
+
+    padding: 15px 20px;
+
+    border-radius: 4px;
+
+    color: white;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    box-sizing: border-box;
+}
+
+
+/* Título */
+
+.formulario h3 {
+    color: white;
+
+    text-align: center;
+
+    margin: 0 0 10px 0;
+
+    font-size: 18px;
+}
+
+
+/* Campos */
+
+.formulario input,
+.formulario select,
+.formulario textarea {
+
+    width: 100%;
+
+    padding: 11px 15px;
+
+    margin: 6px 0;
+
+    border: 1px solid #aaa;
+
+    border-radius: 10px;
+
+    box-sizing: border-box;
+
+    font-family: "Roboto", sans-serif;
+
+    outline: none;
+
+    transition: 0.3s;
+}
+
+
+/* Foco nos campos */
+
+.formulario input:focus,
+.formulario select:focus,
+.formulario textarea:focus {
+
+    border-color: #5274C6;
+
+    box-shadow: 0 0 5px rgba(82, 116, 198, 0.6);
+}
+
+
+/* Mensagem */
+
+.formulario textarea {
+
+    height: 80px;
+
+    resize: none;
+}
+
+
+/* Botão */
+
+.btn_contato {
+
+    display: flex;
+
+    justify-content: center;
+
+    margin-top: 10px;
+}
+
+.btn_contato button {
+
+    background-color: #5274C6;
+
+    color: white;
+
+    border: 1px solid #aaa;
+
+    padding: 10px 25px;
+
+    cursor: pointer;
+
+    border-radius: 3px;
+
+    transition: 0.3s;
+}
+
+
+
+.btn_contato button:hover {
+
+    background-color: #0068b5;
+
+    transform: scale(1.08);
+}
+
+.modal {
+    align-items: center;
+    display: flex;
+}
+
+.caixas>span {
+
+    align-items: end;
+    justify-content: end;
+    display: flex;
+}
+
+.caixas>span>button {
+    background-color: #5274C6;
+    border: 1px solid #aaa;
+    color: #fff;
+    padding: 5px 10px 10px 10px;
+
+    cursor: pointer;
+}
+
+section {
+   
+    margin: 10%;
+    min-height: 36vh;
+
+}
+
+
+/* modal */
+
+.imagem-comparacao {
+    width: 180px;
+    height: 110px;
+    object-fit: contain;
+    display: block;
+    margin: 0 auto 10px;
+}
