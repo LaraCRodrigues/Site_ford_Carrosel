@@ -1,0 +1,122 @@
+/* MEDIA QUERIES - mobile*/
+
+
+@media only screen and (max-width: 500px) {
+
+    .links_nav>ul>li>a {
+        font-size: 15px;
+    }
+
+    nav>.links_nav {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 20px;
+        font-size: 1rem;
+    }
+
+    .foto_centro {
+        width: 100%;
+        max-width: 550px;
+        height: auto;
+        margin-top: 40px;
+    }
+
+    /* carrosel */
+    .foto_centro {
+        height: 300px;
+    }
+
+    .btn {
+        width: 38px;
+        height: 38px;
+        font-size: 18px;
+    }   
+    .tras {
+        display: none;
+        }
+        .frente {
+        display: none;
+        }
+
+    .texto_link>h3 {
+        text-align: center;
+    }
+        .carossel {
+        width: 95%;
+    }
+
+    
+
+    #carousel-title h3 {
+        font-size: 18px;
+    }
+
+    .container_cards {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 15px;
+    }
+
+    .flex_elementos {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+      .flex_carros > img:not(.icon) {
+        width: 100%;
+        max-width: 280px;
+        height: auto;
+    }
+    .flex_elementos {
+        padding-top: 30px;
+    }
+
+    .caixas>span {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .sessao_carro>span>img {
+        width: 100%;
+        height: auto;
+    }
+
+    /* Footer */
+    footer {
+        height: auto;
+    }
+/* 
+    .rodape_contato {
+        margin-top: 70%;
+    } */
+
+    .copy {
+        font-size: 15px;
+        text-align: center;
+    }
+
+    a>.icon {
+        width: 30px;
+        height: auto;
+    }
+
+    .container {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+}
+
+/* MEDIA QUERIES - 27pol computador*/
+/* Alvo: Telas de 27" QHD ou superiores */
+@media screen and (min-width: 2560px) {
+    body {
+        margin: 0 auto;
+    }
+}
