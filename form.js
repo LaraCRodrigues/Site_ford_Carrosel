@@ -87,3 +87,10 @@ function Post(event, form) {
 
     form.reset();
 }
+
+const aceiteTermos = document.getElementById("aceiteTermos");
+const btnEnviar = document.getElementById("btnEnviar");
+
+aceiteTermos.addEventListener("change", function () {
+    btnEnviar.disabled = !aceiteTermos.checked;
+});
