@@ -55,9 +55,30 @@
 
             <textarea name="mensagem" placeholder="Descreva aqui..." required></textarea>
 
+            <div class="lgpd">
+              <p>
+                Os dados serão mantidos em nossa base de dados, só enquanto for desejado
+                por você. A qualquer momento, será possível editar ou remover tais dados.
+              </p>
+
+              <label>
+                <input type="checkbox" id="aceiteTermos" name="aceiteTermos">
+                Sim. Li e concordo com os
+                <a href="https://www.ford.com.br/politica-de-privacidade/" target="_blank">
+                  Termos e Condições
+                </a>.
+              </label>
+
+              <label>
+                <input type="checkbox" id="novidades" name="novidades">
+                Sim. Também quero receber descontos e novidades.
+              </label>
+            </div>
+
             <span class="btn_contato">
-              <button type="submit">Enviar</button>
+              <button type="submit" id="btnEnviar" disabled>Enviar</button>
             </span>
+            
           </form>
         </div>
 
