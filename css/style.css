@@ -298,224 +298,89 @@ span {
 /* pg contato *//* =========================
    FORMULÁRIO DE CONTATO
 ========================= */
-
-.container_modal {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.flex_elementos {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 30px;
-}
-
-
-/* Imagem do carro */
-
-.flex_elementos > img {
-    width: 500px;
-    height: auto;
-}
-
-
-/* Formulário */
-
-.formulario {
-    background-color: #003478;
-
-    width: 330px;
-
-    padding: 15px 20px;
-
-    border-radius: 4px;
-
-    color: white;
-
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-
-    box-sizing: border-box;
-}
-
-
-/* Título */
-
-.formulario h3 {
-    color: white;
-
-    text-align: center;
-
-    margin: 0 0 10px 0;
-
-    font-size: 18px;
-}
-
-
-/* Campos */
-
-.formulario input,
-.formulario select,
-.formulario textarea {
-
-    width: 100%;
-
-    padding: 11px 15px;
-
-    margin: 6px 0;
-
-    border: 1px solid #aaa;
-
-    border-radius: 10px;
-
-    box-sizing: border-box;
-
-    font-family: "Roboto", sans-serif;
-
-    outline: none;
-
-    transition: 0.3s;
-}
-
-
-/* Foco nos campos */
-
-.formulario input:focus,
-.formulario select:focus,
-.formulario textarea:focus {
-
-    border-color: #5274C6;
-
-    box-shadow: 0 0 5px rgba(82, 116, 198, 0.6);
-}
-
-
-/* Mensagem */
-
-.formulario textarea {
-
-    height: 80px;
-
-    resize: none;
-}
-
-
-/* Botão */
-
-.btn_contato {
-
-    display: flex;
-
-    justify-content: center;
-
-    margin-top: 10px;
-}
-
-.btn_contato button {
-
-    background-color: #5274C6;
-
-    color: white;
-
-    border: 1px solid #aaa;
-
-    padding: 10px 25px;
-
-    cursor: pointer;
-
-    border-radius: 3px;
-
-    transition: 0.3s;
-}
-
-
-/* PASSO 9 */
-
-.btn_contato button:hover {
-
-    background-color: #0068b5;
-
-    transform: scale(1.08);
-}/* =========================
-   FORMULÁRIO DE CONTATO
+/* =========================
+   PÁGINA DE CONTATO
 ========================= */
 
 .container_modal {
+    width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
-}
 
+
+}
 .flex_elementos {
+    width: 100%;
+    max-width: 1000px;
+
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: stretch;
+
     gap: 30px;
 }
-
-
-/* Imagem do carro */
-
 .flex_elementos > img {
-    width: 500px;
-    height: auto;
+    width: 600px;
+    height: 550px;
+    /* object-fit: cover; */
+    object-position: center;
+    border-radius: 10px;
+    mix-blend-mode: multiply;
+
+        flex-shrink: 0;
+
 }
-
-
-/* Formulário */
-
 .formulario {
+    width: 420px;
+    min-height: 550px;
+
     background-color: #003478;
 
-    width: 330px;
+    padding: 25px;
 
-    padding: 15px 20px;
-
-    border-radius: 4px;
+    border-radius: 10px;
 
     color: white;
 
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: stretch;
 
-    box-sizing: border-box;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.25);
 }
-
-
-/* Título */
-
 .formulario h3 {
     color: white;
 
     text-align: center;
 
-    margin: 0 0 10px 0;
+    margin: 0 0 15px 0;
 
-    font-size: 18px;
+    font-size: 22px;
+    font-weight: 700;
 }
 
 
-/* Campos */
+/* =========================
+   CAMPOS
+========================= */
 
-.formulario input,
+.formulario input:not([type="checkbox"]),
 .formulario select,
 .formulario textarea {
-
     width: 100%;
 
-    padding: 11px 15px;
+    padding: 12px 15px;
 
     margin: 6px 0;
 
     border: 1px solid #aaa;
 
-    border-radius: 10px;
+    border-radius: 8px;
 
-    box-sizing: border-box;
+    background-color: white;
+
+    color: #222;
 
     font-family: "Roboto", sans-serif;
 
@@ -525,64 +390,189 @@ span {
 }
 
 
-/* Foco nos campos */
+/* Foco */
 
-.formulario input:focus,
+.formulario input:not([type="checkbox"]):focus,
 .formulario select:focus,
 .formulario textarea:focus {
-
     border-color: #5274C6;
 
-    box-shadow: 0 0 5px rgba(82, 116, 198, 0.6);
+    box-shadow: 0 0 6px rgba(82, 116, 198, 0.6);
 }
 
 
-/* Mensagem */
+/* =========================
+   TEXTAREA
+========================= */
 
 .formulario textarea {
-
-    height: 80px;
+    height: 100px;
 
     resize: none;
 }
 
 
-/* Botão */
+/* =========================
+   LGPD
+========================= */
+
+.lgpd {
+    width: 100%;
+
+    margin-top: 15px;
+
+    padding: 15px;
+
+    background-color: rgba(255, 255, 255, 0.08);
+
+    border: 1px solid rgba(255, 255, 255, 0.2);
+
+    border-radius: 8px;
+
+    font-size: 13px;
+
+    line-height: 1.5;
+}
+
+
+/* Texto */
+
+.lgpd p {
+    margin: 0 0 12px 0;
+
+    color: #fff;
+
+    text-align: left;
+}
+
+
+/* Labels */
+
+.lgpd label {
+    display: flex;
+
+    align-items: flex-start;
+
+    gap: 8px;
+
+    margin-bottom: 10px;
+
+    color: #fff;
+
+    cursor: pointer;
+
+    line-height: 1.4;
+}
+
+
+/* Checkbox */
+
+.lgpd input[type="checkbox"] {
+    width: 18px;
+    height: 18px;
+
+    min-width: 18px;
+
+    margin: 2px 0 0 0;
+
+    cursor: pointer;
+}
+
+
+/* Link */
+
+.lgpd a {
+    color: #fff;
+
+    font-weight: 700;
+
+    text-decoration: underline;
+}
+
+.lgpd a:hover {
+    color: #b8caff;
+}
+
+
+/* =========================
+   BOTÃO
+========================= */
 
 .btn_contato {
-
     display: flex;
 
     justify-content: center;
 
-    margin-top: 10px;
+    margin-top: 18px;
 }
 
-.btn_contato button {
 
+.btn_contato button {
     background-color: #5274C6;
 
     color: white;
 
-    border: 1px solid #aaa;
+    border: none;
 
-    padding: 10px 25px;
+    padding: 12px 35px;
+
+    font-size: 16px;
+
+    font-weight: 600;
+
+    border-radius: 6px;
 
     cursor: pointer;
-
-    border-radius: 3px;
 
     transition: 0.3s;
 }
 
 
+/* Botão habilitado */
 
-.btn_contato button:hover {
-
+.btn_contato button:enabled:hover {
     background-color: #0068b5;
 
-    transform: scale(1.08);
+    transform: translateY(-2px);
+
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
 }
+
+
+/* Botão desabilitado */
+
+.btn_contato button:disabled {
+    background-color: #6d7d9f;
+
+    opacity: 0.6;
+
+    cursor: not-allowed;
+
+    transform: none;
+
+    box-shadow: none;
+}
+
+
+/* =========================
+   SEÇÃO
+========================= */
+
+.ssmodal {
+    width: 100%;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    margin: 30px 0;
+
+    min-height: auto;
+}
+
+
 
 .modal {
     align-items: center;
